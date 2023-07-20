@@ -2,7 +2,7 @@
   <div class="row row-cols-3">
     <div class="col">
       <div class="card">
-        <img class="card-img-top" src="https://via.placeholder.com/150x150" alt="Card image cap">
+        <%= image_tag 'image_1.png', alt: 'My image', class: 'card-img-top' %>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a card with some text content.</p>
@@ -11,7 +11,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top" src="https://via.placeholder.com/150x150" alt="Card image cap">
+        <%= image_tag 'image_2.png', alt: 'My image', class: 'card-img-top' %>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a card with some text content.</p>
@@ -20,7 +20,7 @@
     </div>
     <div class="col">
       <div class="card">
-        <img class="card-img-top" src="https://via.placeholder.com/150x150" alt="Card image cap">
+        <%= image_tag 'image_3.png', alt: 'My image', class: 'card-img-top' %>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a card with some text content.</p>
@@ -28,4 +28,9 @@
       </div>
     </div>
   </div>
+</div>
+<div class="d-grid gap-2">
+<%= link_to('http://walteralarcongarces.cl', class: 'btn btn-primary', target: '_blank', id: 'boton_ver_mas') do %>
+  <span class="fa fa-link"></span> Ver más
+<% end %>
 </div>
